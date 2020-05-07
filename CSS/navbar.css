@@ -1,0 +1,294 @@
+#navbar {
+  background-color: black;
+  width: 15vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+#navbar .logo {
+  width: 70%;
+  margin: 2vw;
+}
+
+#navbar .logo:hover {
+  width: 75%;
+  margin: calc(2vw - 2.5%);
+}
+
+.navbar-def {
+  -webkit-transform: translateX(-20vw);
+          transform: translateX(-20vw);
+}
+
+.navbar-nav {
+  -webkit-transform: translateX(0vw);
+          transform: translateX(0vw);
+}
+
+.navbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #B0B0B0;
+  margin: 1vw;
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+}
+
+.navbtn div {
+  width: 0%;
+  background-color: black;
+  height: 0.5vw;
+  border-radius: 0.1vw;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbtn h1 {
+  font-size: 2.5vw;
+  margin: 0.3vw;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+}
+
+.navbtn:hover div {
+  width: 100%;
+}
+
+#navfab {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-color: red;
+  border: 10px solid white;
+  position: fixed;
+  z-index: 3;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#navfab svg {
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+
+#navfab:hover {
+  background-color: darkred;
+}
+
+.navfab-def {
+  bottom: 50px;
+  left: 50px;
+}
+
+.navfab-def svg {
+  -webkit-transform: rotateZ(0);
+          transform: rotateZ(0);
+}
+
+.navfab-nav {
+  bottom: 50px;
+  left: calc(20vw - 120px);
+}
+
+.navfab-nav svg {
+  -webkit-transform: rotateZ(-180deg);
+          transform: rotateZ(-180deg);
+}
+
+@media only screen and (max-width: 1080px) {
+  #navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #navbar .logo {
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 30%;
+  }
+  #navbar .logo:hover {
+    width: 45%;
+    margin-top: 2.5%;
+    margin-left: 27.5%;
+  }
+  .navbar-def {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  .navbar-nav {
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+  .btns {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-bottom: 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .navbtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #B0B0B0;
+    margin: auto;
+    margin-top: 3vw;
+  }
+  .navbtn div {
+    width: 0%;
+    margin-left: 50%;
+    background-color: black;
+    height: 2vw;
+    border-radius: 2vw;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .navbtn h1 {
+    font-size: 8vw;
+    margin: 0.5vw;
+  }
+  .navbtn:hover div {
+    width: 100%;
+    margin-left: 0;
+  }
+  #navfab {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: red;
+    border: 4px solid white;
+    position: fixed;
+    z-index: 5;
+    -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  #navfab svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+  }
+  #navfab:hover {
+    background-color: darkred;
+  }
+  .navfab-def {
+    bottom: 20px;
+    right: 20px;
+  }
+  .navfab-def svg {
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+  .navfab-nav {
+    bottom: 20px;
+    right: calc(100vw - 110px);
+  }
+  .navfab-nav svg {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+}
+
+.selected {
+  color: white;
+}
+
+.nav-purple div {
+  background-color: #d166ff;
+}
+
+.nav-purple:hover {
+  color: #d166ff;
+}
+
+.nav-blue div {
+  background-color: #0078FF;
+}
+
+.nav-blue:hover {
+  color: #0078FF;
+}
+
+.nav-red div {
+  background-color: #FF0000;
+}
+
+.nav-red:hover {
+  color: #FF0000;
+}
+
+.nav-orange div {
+  background-color: #FFC202;
+}
+
+.nav-orange:hover {
+  color: #FFC202;
+}
+
+.nav-green div {
+  background-color: #00E766;
+}
+
+.nav-green:hover {
+  color: #00E766;
+}
+
+#pointer {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  z-index: 5;
+  position: fixed;
+  pointer-events: none;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.white {
+  fill: white;
+}
+/*# sourceMappingURL=navbar.css.map */
