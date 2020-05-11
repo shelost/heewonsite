@@ -104,8 +104,13 @@ const loop = () =>{
         navbar.onclick = () => {
             sessionStorage.setItem('nav', 0)
         }
-    }
+        sessionStorage.setItem('cur', 1)
 
+        curtog.classList.add('hidden')
+    }else{
+        curtog.classList.remove('hidden')
+    }
+    
 }
 
 

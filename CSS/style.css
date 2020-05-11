@@ -307,7 +307,11 @@ a {
 }
 
 .header-nav p {
-  width: 95%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 30%;
+  max-width: 80%;
 }
 
 .card {
