@@ -140,6 +140,7 @@ for (let i=0;i<elems.length;i++){
 // POINTER
 
 var pointer = Id('pointer')
+var path = Id('path')
 var textCursor = false;
 
 window.addEventListener('mousemove', e => {
@@ -154,7 +155,7 @@ window.addEventListener('mousemove', e => {
 
 // White Cursor
 
-var dark = [Id('navbar'), ...Class('black'), ...Class('card')]
+var dark = [Id('navbar'), ...Class('black'), ...Class('card'), ...Class('link')]
 
 for (let i=0;i<dark.length;i++){
     dark[i].addEventListener('mouseenter', e => {
@@ -180,7 +181,7 @@ for (let i=0;i<nodark.length;i++){
 
 // Text Cursor
 
-var text = [ ...Tag('p'), ...Class('title')]
+var text = [ ...Tag('p'), ...Class('text'), ...Class('title')]
 
 for (let i=0;i<text.length;i++){
     text[i].addEventListener('mouseenter', e => {
@@ -193,10 +194,26 @@ for (let i=0;i<text.length;i++){
     })
 }
 
+// Link Cursor
+
+var links = [...Tag('a')]
+
+path.style.transform = 'scale(0.6)';
+
+for (let i=0;i<links.length;i++){
+    links[i].addEventListener('mouseenter', e => {
+        path.style.transform = 'scale(0.8) rotate(-720deg)';
+    })
+    links[i].addEventListener('mouseleave', e => {
+        path.style.transform = 'scale(0.6)';
+    })
+}
+
 document.body.addEventListener('mouseleave', e => {
     pointer.style.opacity = 0;
 })
 document.body.addEventListener('mouseenter', e => {
     pointer.style.opacity = 1;
 })
+
 
