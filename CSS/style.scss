@@ -3,12 +3,14 @@ $green: #00E766;
 $red: #FF0000;
 $orange: #FFC202;
 $blue: #0078FF;
+$turq: #25F988;
 $orangered: orangered;
 $black: #000000;
 $darkblue: #001F5A;
 $darkred: #5A0000;
 $darkpurple: #3C004F;
 $darkgreen: #002721;
+$darkturq: #0CCD66;
 
 // UNIVERSAL
 
@@ -257,18 +259,13 @@ a{
         font-weight: 900;
     }
 
-    h2{
-        font-size: 4vw;
-        transform: translateY(-5vw);
-        margin-bottom: 0;
-        text-shadow: 0px 5px 20px rgba(255,255,255,0.8);
-    }
-
     p{
-        font-size: 1.7vw;
+        font-size: 1.5vw;
         line-height: 2.2vw;
         background-color: rgba(0,0,0,0.15);
-        width: 80%;
+        width: fit-content;
+        min-width: 30%;
+        max-width: 80%;
         padding: 2vw;
         margin: auto;
         border-radius: 2vw;
@@ -295,6 +292,8 @@ a{
         width: 95%;
     }
 }
+
+
 
 // CARD
 
@@ -366,16 +365,41 @@ a{
 
     .header{
         h1{
-            font-size: 20vw;
+            font-size: 17vw;
+            line-height: 20vw;
             font-family: Raleway, Questrial, sans-serif;
             font-weight: 900;
         }
+        h2{
+            font-size: 8vw;
+            transform: translateY(-5vw);
+            margin-bottom: 2vw;
+            text-shadow: 0px 5px 20px rgba(255,255,255,0.8);
+        }
         p{
-            font-size: 5vw;
+            font-size: 4vw;
+            line-height: 5vw;
             padding: 5vw;
             border-radius: 5vw;
-            width: 75%;
+            width: fit-content;
+            min-width: 30%;
+            max-width: 75%;
+            margin-bottom: 0vw;
         }
+        width: 100vw;
+        transform: translateX(1vw);
+    }
+
+    .header-nav{
+        width: 100vw;
+    }
+
+    .main{
+        .subelem{
+            width: 80%;
+        }
+        width: 100vw;
+        margin: 0;
     }
 
     .elems{
@@ -592,6 +616,23 @@ a{
         }
         p{
             background-color: darken($orange, 30%);
+        }
+    }
+}
+.turq{
+    background-color: $turq;
+    &.elem-not-active{
+        background-color: darken($turq, 10%);
+    }
+    &.elem-active{
+        h1{
+            background-color: darken($turq, 30%);
+        }
+        h2{
+            background-color: darken($turq, 30%);
+        }
+        p{
+            background-color: darken($turq, 30%);
         }
     }
 }

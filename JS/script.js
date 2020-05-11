@@ -12,12 +12,14 @@ function Tag(arg){
     return document.getElementsByTagName(arg)
 }
 
-
 // NAVBAR
 
 var nav;
-var navfab = Id('navfab')
-var navbar = Id('navbar')
+var cur;
+const navfab = Id('navfab')
+const navbar = Id('navbar')
+const curtog = Id('cursor-toggle')
+const curicon = Id('cursor-icon')
 
 if (window.innerWidth < 1080){
     sessionStorage.setItem('nav', 0)
@@ -30,15 +32,21 @@ navfab.onclick = () => {
     }else{
         sessionStorage.setItem('nav', 1)
     }
-    console.log(sessionStorage.getItem('nav'))
-  
 }
 
-console.log(window.innerWidth)
+curtog.onclick = () => {
+ 
+    if (sessionStorage.getItem('cur') == '1'){
+        sessionStorage.setItem('cur', 0)
+    }else{
+        sessionStorage.setItem('cur', 1)
+    }
+}
 
 const loop = () =>{
 
     nav = sessionStorage.getItem('nav') == '1'? true: false;
+    cur = sessionStorage.getItem('cur') == '1'? true: false;
 
     if (nav){
         navbar.classList.add('navbar-nav')
@@ -68,14 +76,38 @@ const loop = () =>{
         }
     }
 
+    if (cur){
+        pointer.classList.add('hidden')
+        document.body.style.cursor = 'default';
+        for (let i=0;i<Tag('a').length;i++){
+            Tag('a')[i].style.cursor = 'pointer';
+        }
+        curicon.setAttribute('d', `M457.15,333,257.6,327.44A15.17,15.17,0,0,0,246.34,332L106.76,474.71c-10.08,10.31-27.5,2-25.89-12.28L126.65,
+        55.35a15.15,15.15,0,0,1,24.7-10L467.21,306.19C478.33,315.37,471.55,333.42,457.15,333Z`)
+    }else{
+        pointer.classList.remove('hidden')
+        document.body.style.cursor = 'none';
+        for (let i=0;i<Tag('a').length;i++){
+            Tag('a')[i].style.cursor = 'none';
+        }
+        curicon.setAttribute('d', `M396.79,287.65l-93.96,8.46c-2.51,0.23-4.07,2.84-3.09,5.16l37.97,89.2c0.8,1.89-0.08,4.07-1.96,4.87
+        l-69.86,29.74c-1.89,0.8-4.07-0.08-4.87-1.96l-38.41-90.23c-0.99-2.32-3.95-3-5.86-1.35l-73.97,64.24c-2.5,2.17-6.37,0.24-6.14-3.06
+        l21.21-305.52c0.21-3.03,3.76-4.54,6.09-2.59l234.9,196.51C401.38,283.22,400.09,287.35,396.79,287.65z`)
+    }
+
     if (window.innerWidth<1080){
         for (let i=0;i<elems.length;i++){
             elems[i].classList.add('elem-active')
         }
         pointer.classList.add('hidden')
+
+        navbar.onclick = () => {
+            sessionStorage.setItem('nav', 0)
+        }
     }
 
 }
+
 
 setInterval(loop, 1000/30)
 
@@ -157,9 +189,9 @@ for (let i=0;i<text.length;i++){
 }
 
 document.body.addEventListener('mouseleave', e => {
-    pointer.classList.add('hidden')
+    pointer.style.opacity = 0;
 })
 document.body.addEventListener('mouseenter', e => {
-    pointer.classList.remove('hidden')
+    pointer.style.opacity = 1;
 })
 

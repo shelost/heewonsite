@@ -1,6 +1,16 @@
 .header h1 {
   text-shadow: 0px 5px 40px white;
   font-weight: 800;
+  font-size: 8vw;
+  line-height: 8vw;
+}
+
+.header h2 {
+  font-size: 3vw;
+  -webkit-transform: translateY(-4vw);
+          transform: translateY(-4vw);
+  margin-bottom: 0;
+  text-shadow: 0px 5px 20px rgba(255, 255, 255, 0.8);
 }
 
 .header p {
@@ -42,8 +52,11 @@
 }
 
 .subelem p {
-  font-size: 1.5vw;
-  margin: 0;
+  font-size: 1.3vw;
+  margin: auto;
+  width: 80%;
+  line-height: 1.7vw;
+  text-align: center;
   margin-bottom: 1vw;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -54,5 +67,67 @@
 
 .main-nav .subelem {
   width: 70%;
+}
+
+@media only screen and (max-width: 1080px) {
+  .header {
+    width: 100vw;
+    -webkit-transform: translateX(1vw);
+            transform: translateX(1vw);
+  }
+  .header h1 {
+    font-size: 14vw;
+    line-height: 15vw;
+    font-family: Raleway, Questrial, sans-serif;
+    font-weight: 800;
+  }
+  .header h2 {
+    font-size: 8vw;
+    -webkit-transform: translateY(-5vw);
+            transform: translateY(-5vw);
+    margin-bottom: 2vw;
+    text-shadow: 0px 5px 20px rgba(255, 255, 255, 0.8);
+  }
+  .header p {
+    font-size: 4vw;
+    line-height: 5vw;
+    padding: 5vw;
+    border-radius: 5vw;
+    width: 75%;
+    margin-bottom: -6vw;
+  }
+  .header-nav {
+    width: 100vw;
+  }
+  .main {
+    width: 100vw;
+    margin: 0;
+  }
+  .main .subelem {
+    width: 80%;
+  }
+  .main-nav {
+    width: 100vw;
+    margin: 0;
+  }
+  .main-nav .subelem {
+    width: 80%;
+  }
+  .subelem {
+    margin-bottom: 8vw;
+    padding: 1vw;
+    border-radius: 4vw;
+  }
+  .subelem img {
+    border-radius: 3vw;
+  }
+  .subelem h1 {
+    font-size: 8vw;
+    margin: 4vw;
+  }
+  .subelem p {
+    font-size: 4vw;
+    margin-bottom: 3vw;
+  }
 }
 /*# sourceMappingURL=page.css.map */
