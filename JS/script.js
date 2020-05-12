@@ -14,8 +14,8 @@ function Tag(arg){
 
 // NAVBAR
 
-var nav;
-var cur;
+var nav = false;
+var cur = false;
 const navfab = Id('navfab')
 const navbar = Id('navbar')
 const curtog = Id('cursor-toggle')
@@ -78,7 +78,9 @@ const loop = () =>{
 
     if (cur){
         pointer.classList.add('hidden')
+        pointer.style.opacity = 0;
         document.body.style.cursor = 'default';
+        document.documentElement.style.cursor = 'default';
         for (let i=0;i<Tag('a').length;i++){
             Tag('a')[i].style.cursor = 'pointer';
         }
@@ -87,6 +89,8 @@ const loop = () =>{
     }else{
         pointer.classList.remove('hidden')
         document.body.style.cursor = 'none';
+        document.documentElement.style.cursor = 'none';
+        pointer.style.opacity = 1;
         for (let i=0;i<Tag('a').length;i++){
             Tag('a')[i].style.cursor = 'none';
         }
@@ -114,7 +118,7 @@ const loop = () =>{
 }
 
 
-setInterval(loop, 1000/30)
+setInterval(loop, 1000/60)
 
 var elems = [...Class('elem'), ...Class('card')]
 
