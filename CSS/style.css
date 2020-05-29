@@ -114,8 +114,8 @@ a {
 }
 
 .elem .one-line {
-  -webkit-transform: translateY(20vw);
-          transform: translateY(20vw);
+  -webkit-transform: translateY(23vw);
+          transform: translateY(23vw);
 }
 
 .elem .one-line-date {
@@ -163,8 +163,8 @@ a {
 }
 
 .elem:hover .one-line {
-  -webkit-transform: translateY(21vw);
-          transform: translateY(21vw);
+  -webkit-transform: translateY(19vw);
+          transform: translateY(19vw);
 }
 
 .elem:hover .one-line-date {
@@ -190,13 +190,13 @@ a {
 }
 
 .elem-nav .one-line {
-  -webkit-transform: translateY(30vw);
-          transform: translateY(30vw);
+  -webkit-transform: translateY(27vw);
+          transform: translateY(27vw);
 }
 
 .elem-nav .one-line-date {
-  -webkit-transform: translateY(27vw);
-          transform: translateY(27vw);
+  -webkit-transform: translateY(25vw);
+          transform: translateY(25vw);
 }
 
 .elem-nav:hover h1 {
@@ -218,13 +218,13 @@ a {
 }
 
 .elem-nav:hover .one-line {
-  -webkit-transform: translateY(28vw);
-          transform: translateY(28vw);
+  -webkit-transform: translateY(24vw);
+          transform: translateY(24vw);
 }
 
 .elem-nav:hover .one-line-date {
-  -webkit-transform: translateY(25vw);
-          transform: translateY(25vw);
+  -webkit-transform: translateY(21vw);
+          transform: translateY(21vw);
 }
 
 .elems {
