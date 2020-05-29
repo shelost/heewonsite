@@ -9,12 +9,18 @@
     left: 0;
   }
   #navbar .logo {
-    width: 70%;
+    width: 80%;
     margin: 2vw;
+    margin-left: 1vw;
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
   }
   #navbar .logo:hover {
-    width: 75%;
+    width: 85%;
     margin: calc(2vw - 2.5%);
+    margin-left: calc(1vw - 2.5%);
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
   }
   .navbar-def {
     -webkit-transform: translateX(-20vw);
@@ -54,8 +60,8 @@
   .navbtn h1 {
     font-size: 2.5vw;
     margin: 0.3vw;
-    font-family: Raleway, sans-serif;
-    font-weight: 800;
+    font-family: Questrial, sans-serif;
+    font-weight: 900;
   }
   .navbtn:hover div {
     width: 100%;
@@ -65,30 +71,31 @@
     height: 80px;
     border-radius: 80px;
     background-color: red;
-    border: 10px solid white;
+    border: 5px solid white;
     position: fixed;
     z-index: 3;
     -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   }
   #navfab svg {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
     fill: white;
   }
   #navfab:hover {
     background-color: darkred;
   }
   .navfab-def {
-    bottom: 50px;
-    left: 50px;
+    bottom: 2vw;
+    left: 2vw;
   }
   .navfab-def svg {
     -webkit-transform: rotateZ(0);
             transform: rotateZ(0);
   }
   .navfab-nav {
-    bottom: 50px;
+    bottom: 2vw;
     left: calc(20vw - 120px);
   }
   .navfab-nav svg {
@@ -121,11 +128,16 @@
     width: 40%;
     margin-top: 5%;
     margin-left: 30%;
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   #navbar .logo:hover {
-    width: 45%;
-    margin-top: 2.5%;
-    margin-left: 27.5%;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
   }
   .navbar-def {
     -webkit-transform: translateX(100vw);
@@ -193,27 +205,24 @@
   .navbtn h1 {
     font-size: 8vw;
     margin: 0.5vw;
-    font-family: Raleway, Questrial, sans-serif;
+    font-family: Questrial, sans-serif;
     font-weight: 800;
-  }
-  .navbtn:hover div {
-    width: 100%;
-    margin-left: 0;
   }
   #navfab {
     width: 80px;
     height: 80px;
     border-radius: 80px;
     background-color: red;
-    border: 10px solid white;
+    border: 5px solid white;
     position: fixed;
     z-index: 9;
     -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   }
   #navfab svg {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
     fill: white;
   }
   #navfab:hover {

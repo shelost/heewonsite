@@ -26,7 +26,7 @@ if (window.innerWidth < 1080){
 }
 
 navfab.onclick = () => {
- 
+
     if (sessionStorage.getItem('nav') == '1'){
         sessionStorage.setItem('nav', 0)
     }else{
@@ -35,7 +35,7 @@ navfab.onclick = () => {
 }
 
 curtog.onclick = () => {
- 
+
     if (sessionStorage.getItem('cur') == '1'){
         sessionStorage.setItem('cur', 0)
     }else{
@@ -62,7 +62,7 @@ const loop = () =>{
         }
 
     }else{
-    
+
         navbar.classList.remove('navbar-nav')
         navfab.classList.remove('navfab-nav')
         for (let i=0;i<Class('main').length;i++){
@@ -99,6 +99,7 @@ const loop = () =>{
         l21.21-305.52c0.21-3.03,3.76-4.54,6.09-2.59l234.9,196.51C401.38,283.22,400.09,287.35,396.79,287.65z`)
     }
 
+
     if (window.innerWidth<1080){
         for (let i=0;i<elems.length;i++){
             elems[i].classList.add('elem-active')
@@ -114,7 +115,7 @@ const loop = () =>{
     }else{
         curtog.classList.remove('hidden')
     }
-    
+
 }
 
 
@@ -154,7 +155,7 @@ window.addEventListener('mousemove', e => {
     }else{
       pointer.style.cssText = "top:" + (e.clientY-20) + "px; " +  "left:" + (e.clientX-20) + "px";
     }
- 
+
 })
 
 // White Cursor
@@ -172,7 +173,7 @@ for (let i=0;i<dark.length;i++){
 
 // No White Cursor
 
-var nodark = [...Class('logo')]
+var nodark = []
 
 for (let i=0;i<nodark.length;i++){
     nodark[i].addEventListener('mouseenter', e => {
@@ -203,15 +204,6 @@ for (let i=0;i<text.length;i++){
 var links = [...Tag('a')]
 
 path.style.transform = 'scale(0.6)';
-
-for (let i=0;i<links.length;i++){
-    links[i].addEventListener('mouseenter', e => {
-        path.style.transform = 'scale(0.8) rotate(-720deg)';
-    })
-    links[i].addEventListener('mouseleave', e => {
-        path.style.transform = 'scale(0.6)';
-    })
-}
 
 document.body.addEventListener('mouseleave', e => {
     pointer.style.opacity = 0;
