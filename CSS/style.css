@@ -332,7 +332,7 @@ a {
 
 .card h1 {
   font-size: 2vw;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 0.8vw;
   border-radius: 2vw;
   width: -webkit-fit-content;
@@ -591,23 +591,23 @@ a {
 }
 
 .orangered {
-  background-color: orangered;
+  background-color: #FF5500;
 }
 
 .orangered.elem-not-active {
-  background-color: #cc3700;
+  background-color: #cc4400;
 }
 
 .orangered.elem-active h1 {
-  background-color: #661c00;
+  background-color: #b33c00;
 }
 
 .orangered.elem-active h2 {
-  background-color: #661c00;
+  background-color: #b33c00;
 }
 
 .orangered.elem-active p {
-  background-color: #661c00;
+  background-color: #b33c00;
 }
 
 .red {
@@ -639,15 +639,15 @@ a {
 }
 
 .purple.elem-active h1 {
-  background-color: #470066;
+  background-color: #7d00b3;
 }
 
 .purple.elem-active h2 {
-  background-color: #470066;
+  background-color: #7d00b3;
 }
 
 .purple.elem-active p {
-  background-color: #470066;
+  background-color: #7d00b3;
 }
 
 .orange {
@@ -735,43 +735,43 @@ a {
 }
 
 .darkblue {
-  background-color: #001F5A;
+  background-color: #00369B;
 }
 
 .darkblue.elem-not-active {
-  background-color: #000d27;
+  background-color: #002468;
 }
 
 .darkblue.elem-active h1 {
-  background-color: #00318d;
+  background-color: #0048ce;
 }
 
 .darkblue.elem-active h2 {
-  background-color: #00318d;
+  background-color: #0048ce;
 }
 
 .darkblue.elem-active p {
-  background-color: #00318d;
+  background-color: #0048ce;
 }
 
 .darkred {
-  background-color: #5A0000;
+  background-color: #750000;
 }
 
 .darkred.elem-not-active {
-  background-color: #270000;
+  background-color: #420000;
 }
 
 .darkred.elem-active h1 {
-  background-color: #8d0000;
+  background-color: #a80000;
 }
 
 .darkred.elem-active h2 {
-  background-color: #8d0000;
+  background-color: #a80000;
 }
 
 .darkred.elem-active p {
-  background-color: #8d0000;
+  background-color: #a80000;
 }
 
 .darkpurple {
@@ -795,23 +795,23 @@ a {
 }
 
 .darkgreen {
-  background-color: #002721;
+  background-color: #006c3b;
 }
 
 .darkgreen.elem-not-active {
-  background-color: black;
+  background-color: #00391f;
 }
 
 .darkgreen.elem-active h1 {
-  background-color: #005a4c;
+  background-color: #009f57;
 }
 
 .darkgreen.elem-active h2 {
-  background-color: #005a4c;
+  background-color: #009f57;
 }
 
 .darkgreen.elem-active p {
-  background-color: #005a4c;
+  background-color: #009f57;
 }
 
 .shadow-purple {
@@ -835,7 +835,7 @@ a {
 }
 
 .shadow-orangered {
-  text-shadow: 0 5px 10px #ffdacc;
+  text-shadow: 0 5px 10px #ffddcc;
 }
 
 body {

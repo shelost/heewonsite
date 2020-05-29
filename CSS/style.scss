@@ -4,12 +4,12 @@ $red: #FF0000;
 $orange: #FFC202;
 $blue: #0078FF;
 $turq: #25F988;
-$orangered: orangered;
+$orangered: #FF5500;
 $black: #000000;
-$darkblue: #001F5A;
-$darkred: #5A0000;
+$darkblue: #00369B;
+$darkred: #750000;
 $darkpurple: #3C004F;
-$darkgreen: #002721;
+$darkgreen: #006c3b;
 $darkturq: #0CCD66;
 
 // UNIVERSAL
@@ -311,7 +311,7 @@ a{
     margin-bottom: 2vw;
     h1{
         font-size: 2vw;
-        background-color: rgba(255,255,255,0.2);
+        background-color: rgba(white, 0.1);
         padding: 0.8vw;
         border-radius: 2vw;
         width: fit-content;
@@ -558,13 +558,13 @@ a{
     }
     &.elem-active{
         h1{
-            background-color: darken($orangered, 30%);
+            background-color: darken($orangered, 15%);
         }
         h2{
-            background-color: darken($orangered, 30%);
+            background-color: darken($orangered, 15%);
         }
         p{
-            background-color: darken($orangered, 30%);
+            background-color: darken($orangered, 15%);
         }
     }
 }
@@ -592,13 +592,13 @@ a{
     }
     &.elem-active{
         h1{
-            background-color: darken($purple, 30%);
+            background-color: darken($purple, 15%);
         }
         h2{
-            background-color: darken($purple, 30%);
+            background-color: darken($purple, 15%);
         }
         p{
-            background-color: darken($purple, 30%);
+            background-color: darken($purple, 15%);
         }
     }
 }

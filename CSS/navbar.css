@@ -310,8 +310,8 @@
 
 #cursor-toggle {
   background-color: rgba(255, 255, 255, 0.2);
-  width: 4vw;
-  height: 4vw;
+  width: 3vw;
+  height: 3vw;
   border-radius: 4vw;
   position: absolute;
   bottom: 1.5vw;
