@@ -114,8 +114,8 @@ a {
 }
 
 .elem .one-line {
-  -webkit-transform: translateY(23vw);
-          transform: translateY(23vw);
+  -webkit-transform: translateY(20vw);
+          transform: translateY(20vw);
 }
 
 .elem .one-line-date {
@@ -168,8 +168,8 @@ a {
 }
 
 .elem:hover .one-line-date {
-  -webkit-transform: translateY(18vw);
-          transform: translateY(18vw);
+  -webkit-transform: translateY(16vw);
+          transform: translateY(16vw);
 }
 
 .elem-active {
