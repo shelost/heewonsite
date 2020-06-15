@@ -8,12 +8,15 @@ $blue: #0078FF;
 
   #navbar{
     background-color: black;
+    box-shadow: 0px 10px 15px rgba(black, 0.8);
     width: 15vw;
-    height: 100vh;
+    border-radius: 2vw;
+    height: 96vh;
     position: fixed;
     z-index: 2;
-    top: 0;
-    left: 0;
+    top: 2vh;
+    left: 1vw;
+    transition: 0.4s ease;
 
     .logo{
 
@@ -97,17 +100,17 @@ $blue: #0078FF;
   }
 
   .navfab-def{
-    bottom: 2vw;
+    bottom: 3vw;
     left: 2vw;
 
     svg{
-
+      transition: 0.4s ease;
       transform: rotateZ(0)
     }
   }
 
   .navfab-nav{
-    bottom: 2vw;
+    bottom: 3vw;
     left: calc(20vw - 120px);
     svg{
 

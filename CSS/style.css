@@ -256,7 +256,7 @@ a {
 }
 
 .main-nav {
-  margin-left: 10vw;
+  padding-left: 20vw;
   width: 82.5vw;
 }
 
@@ -392,8 +392,8 @@ a {
             transform: translateX(1vw);
   }
   .header h1 {
-    font-size: 17vw;
-    line-height: 20vw;
+    font-size: 18vw;
+    line-height: 16vw;
     font-family: Raleway, Questrial, sans-serif;
     font-weight: 800;
   }
@@ -429,21 +429,25 @@ a {
     margin-top: 16vw;
   }
   .text {
-    font-size: 12vw;
+    font-size: 8vw;
+    width: 80%;
     text-align: center;
+    margin: auto;
     margin-top: 14vw;
+    -webkit-transform: translateX(1vw);
+            transform: translateX(1vw);
   }
   .card {
     width: 70vw;
     height: 70vw;
-    border-radius: 6vw;
+    border-radius: 10vw;
     margin-bottom: 10vw;
     background-position: 50% 20%;
   }
   .card h1 {
     font-size: 6vw;
-    -webkit-transform: translate(-4vw, -4vw);
-            transform: translate(-4vw, -4vw);
+    -webkit-transform: translate(-3vw, -3vw);
+            transform: translate(-3vw, -3vw);
     padding: 2vw;
     border-radius: 7vw;
     padding-left: 4vw;
@@ -459,12 +463,12 @@ a {
   }
   .card:hover {
     margin-bottom: 10vw;
-    border-radius: 10vw;
+    border-radius: 14vw;
   }
   .card:hover h1 {
     font-size: 6vw;
-    -webkit-transform: translate(-6vw, -7vw);
-            transform: translate(-6vw, -7vw);
+    -webkit-transform: translate(-5vw, -4vw);
+            transform: translate(-5vw, -4vw);
     padding: 2vw;
     border-radius: 7vw;
     padding-left: 4vw;
@@ -481,14 +485,14 @@ a {
   .elem {
     width: 70vw;
     height: 70vw;
-    border-radius: 6vw;
+    border-radius: 10vw;
     margin-bottom: 17vw;
     background-position: 50% 20%;
   }
   .elem h1 {
     font-size: 6vw;
-    -webkit-transform: translate(-4vw, -4vw);
-            transform: translate(-4vw, -4vw);
+    -webkit-transform: translate(-3vw, -3vw);
+            transform: translate(-3vw, -3vw);
     padding: 2vw;
     border-radius: 7vw;
     padding-left: 4vw;
@@ -510,7 +514,7 @@ a {
     padding: 2vw;
     line-height: 4vw;
     border-radius: 4vw;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     -webkit-transform: translate(8vw, 40vw);
             transform: translate(8vw, 40vw);
   }
@@ -528,12 +532,12 @@ a {
   }
   .elem:hover {
     margin-bottom: 17vw;
-    border-radius: 10vw;
+    border-radius: 14vw;
   }
   .elem:hover h1 {
     font-size: 6vw;
-    -webkit-transform: translate(-6vw, -7vw);
-            transform: translate(-6vw, -7vw);
+    -webkit-transform: translate(-5vw, -4vw);
+            transform: translate(-5vw, -4vw);
     padding: 2vw;
     border-radius: 7vw;
     padding-left: 4vw;
@@ -541,8 +545,8 @@ a {
   }
   .elem:hover h2 {
     font-size: 4vw;
-    -webkit-transform: translate(-10vw, -4vw);
-            transform: translate(-10vw, -4vw);
+    -webkit-transform: translate(-7vw, -2vw);
+            transform: translate(-7vw, -2vw);
     padding: 2vw;
     border-radius: 7vw;
     padding-left: 4vw;

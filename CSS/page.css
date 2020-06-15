@@ -1,3 +1,8 @@
+.header {
+  -webkit-transform: translateX(0.8vw);
+          transform: translateX(0.8vw);
+}
+
 .header h1 {
   color: white;
   font-weight: 800;
@@ -28,8 +33,10 @@
 
 .subelem {
   width: 70%;
+  -webkit-transform: translateX(-0.4vw);
+          transform: translateX(-0.4vw);
   padding: 1vw;
-  border-radius: 2vw;
+  border-radius: 3vw;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.9);
   display: -webkit-box;
@@ -50,7 +57,7 @@
 
 .subelem img {
   width: 100%;
-  border-radius: 1vw;
+  border-radius: 2vw;
 }
 
 .subelem h1 {
@@ -74,7 +81,7 @@
 }
 
 .main-nav .subelem {
-  width: 70%;
+  width: 80%;
 }
 
 .links {
