@@ -1,5 +1,5 @@
 .header h1 {
-  text-shadow: 0px 5px 40px white;
+  color: white;
   font-weight: 800;
   font-size: 8vw;
   line-height: 8vw;
@@ -10,12 +10,20 @@
   -webkit-transform: translateY(-4vw);
           transform: translateY(-4vw);
   margin-bottom: 0;
-  text-shadow: 0px 5px 20px rgba(255, 255, 255, 0.8);
+  color: white;
 }
 
 .header p {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
+}
+
+.header-dark h1 {
+  color: black;
+}
+
+.header-dark h2 {
+  color: black;
 }
 
 .subelem {
